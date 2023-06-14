@@ -28,12 +28,15 @@ public class Demo1FBSignIn {
 //		element.click();
 		
 		
-		driver.findElement(By.id("email")).sendKeys("john12345@gmail.com");
+//		driver.findElement(By.id("email")).sendKeys("john12345@gmail.com");
+		driver.findElement(By.cssSelector("#email")).sendKeys("john12345@gmail.com");
+//		driver.findElement(By.id("pass")).sendKeys("john122");
 		
-		driver.findElement(By.id("pass")).sendKeys("john122");
+		driver.findElement(By.cssSelector("#pass")).sendKeys("john12345@gmail.com");
 		
-		driver.findElement(By.name("login")).click();
+//		driver.findElement(By.name("login")).click();
 		
+		driver.findElement(By.cssSelector("button[name='login']")).click();
 		
 		
 		
