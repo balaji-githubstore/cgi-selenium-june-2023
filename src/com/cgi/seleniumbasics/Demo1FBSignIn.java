@@ -39,7 +39,7 @@ public class Demo1FBSignIn {
 		driver.findElement(By.cssSelector("button[name='login']")).click();
 		
 		
-		
+		String error=driver.findElement(By.xpath("//span[normalize-space()='Start your free trial.']")).getText();
 		driver.quit();
 	}
 
